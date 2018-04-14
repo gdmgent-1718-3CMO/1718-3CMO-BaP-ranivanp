@@ -1,9 +1,35 @@
 /* Navigation
 ---------------------------------------------
 */
-.navbar a {
+.nav {
+  background-color: $clientcolor-6!important;
+  border-bottom: solid 1px orange;
+  color: white;
+  .navbar-brand {
+    width: 150px; //breedte logo navigatie
+  }
+  a {
     border: none;
+    color: white!important;
+    &:active {
+      background-color: transparent;//kleur bij drukken
+    }
+    &:hover {
+      background-color: transparent;
+      color: white!important;
+    }
+    }
+  .nav-link {
+    color: $clientcolor-7!important;
+    text-transform: uppercase;
+  }
+  .nav-item {
+    padding: 0px 10px 0px 50px;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
+
 
 /* FOOTER
 ----------------------------------------------
@@ -16,8 +42,9 @@ html {
 body {
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 0px;
     min-height: 100%;
+    background-color: white;
   }
 
 .bh-absolute-bottom {
@@ -28,14 +55,37 @@ body {
 }
 
 footer {
-    background-color: $mycolor-2;
+  margin-top: 200px;
+  padding-top: 20px;
+    background-color: $clientcolor-6;
     color: $color-white;
     a {
         color: $color-white;
-        &:hover {
-            
+        &:hover {  
+
         }
     }
+}
+
+.footer_icoon {
+  max-width: 30px;
+  margin: 5px 40px;
+}
+
+.footer_icoon_straat {
+  max-width: 25px;
+  margin: 5px 40px;
+}
+
+.footer_logovzw {
+  max-width: 180px;
+  padding-top: 50px;
+}
+
+.footer_logoschool {
+  max-width: 180px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 /* BACK TO TOP
@@ -44,12 +94,12 @@ footer {
 #to-top {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
+  bottom: 80px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:$mycolor-3; /* Set a background color */
+  background-color: $clientcolor-7; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   //padding: 15px; /* Some padding */
@@ -58,6 +108,135 @@ footer {
   border-radius: 20px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   &:hover {
-    background-color:$mycolor-5; 
+    background-color: $clientcolor-6; 
   }
 }
+
+h1 {
+    padding-top: 100px;
+    padding-bottom: 15px;
+    font-size: $font-size-title;
+    font-family: $clientfont-family-base;
+    font-weight: $client-font-weight-light;
+    color: $clientcolor-6;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+h2 {
+  font-size: $font-size-title;
+  font-family: $clientfont-family-base;
+  color: $clientcolor-6;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+p {
+  color: $clientcolor-7;
+}
+
+/* lay-out
+--------------------------------------------
+*/
+.page_headertitle {
+  height: 150px;
+  line-height: 200px; //hetzelfde als height
+  background-color: $clientcolor-6;
+  font-family: $clientfont-family-base;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.page_headericon{
+  background-color: $clientcolor-6;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.headericon {
+  max-width: 200px;
+}
+
+.page_info_content {
+  text-align: center;
+  margin: 0; //aanpassen naar schermbreedte
+}
+
+.realisatie {
+  .col-4 {
+    padding: 10px 10px;
+  }
+}
+
+.realisatie_item{
+  a{
+    //egafoeugf
+    &:hover{
+      //ejfga
+    }
+    &:active{// op klik
+      //elhf
+    }
+    .card{
+      border: none;
+      border-radius: 0;
+    }
+    img{
+      border-radius: 0;
+    }
+    .card-title{
+      color: $clientcolor-7;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.afb-home, .text-home {
+  padding-top: 20px;
+}
+
+.button-lees {
+  max-width: 150px;
+  background-color: $clientcolor-6;
+  color: white;
+  border-color: transparent;
+  text-transform: uppercase;
+  font-size: $font-size-base;
+  border-radius: 5px;
+    &:hover{
+      background-color: $clientcolor-7;
+      color: white;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .button-lees {
+    width: 100%;
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .page_info_content{
+    margin: 0 200px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+

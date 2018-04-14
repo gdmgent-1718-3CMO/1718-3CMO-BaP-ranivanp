@@ -30,6 +30,9 @@ $clientcolor-2:rgba(120,250,250,1);
 $clientcolor-3:rgba(120,250,250,1);
 $clientcolor-4:rgba(120,250,250,1);
 $clientcolor-5:rgba(250,120,120,1);
+$clientcolor-6:rgba(230,156,0,1);
+$clientcolor-7:rgba(42,37,89,1);
+
 
 
 // TYP0GRAPHY
@@ -40,14 +43,16 @@ $clientcolor-5:rgba(250,120,120,1);
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 // Client specific
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i');
 
 // type
 $myfont-family-base: 'Raleway', serif;
 $myfont-family-title: $myfont-family-base;
 
 // sizes
-$font-size-base: 16px;
+$font-size-base: 14px;
+$font-size-title: 30px;
+$font-size-subtitle: 20px;
 $lineheight-base: 1.6em;
 $font-weight-base: 400;
 $font-weight-light: 200;
@@ -58,7 +63,7 @@ $font-weight-bold: 800;
 //------------------------------
 
 // type
-$clientfont-family-base: 'Raleway', serif;
+$clientfont-family-base: 'Cabin', sans-serif;
 $clientfont-family-title: $myfont-family-base;
 
 // sizes

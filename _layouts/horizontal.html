@@ -13,13 +13,29 @@
 
 {% include nav_hor.html %}
 
-<div class="container">
+<!--<div class="container">
     <div class="row">
         <div class="col-12 col-md-3 col-lg-2 order-md-12">
             <nav id="toc" data-toggle="toc"></nav>
         </div>
-        <main class="col-12 col-md-9 col-lg-10 content">
-                {{ content }}
+    </div>
+</div>-->  
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 page_headericon">
+            <img src="{{ site.baseurl }}/images/rolstoelwit.png" class="img-fluid headericon">
+        </div>
+
+        <div class="col-12 page_headertitle">
+            {{ page.headertitle }}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <main class="col-12 content">
+            {{ content }}
         </main>
     </div>
 </div>
