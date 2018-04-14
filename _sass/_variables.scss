@@ -44,6 +44,7 @@ $clientcolor-7:rgba(42,37,89,1);
 
 // Client specific
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i');
 
 // type
 $myfont-family-base: 'Raleway', serif;
@@ -72,3 +73,14 @@ $client-lineheight-base: 1.6em;
 $client-font-weight-base: 400;
 $client-font-weight-light: 200;
 $client-font-weight-bold: 800;
+
+// type
+$clientfont-family-base1: 'Open Sans', sans-serif;
+$clientfont-family-title: $myfont-family-base;
+
+// sizes
+$client-font-size-base1: 16px;
+$client-lineheight-base1: 1.6em;
+$client-font-weight-base1: 400;
+$client-font-weight-light1: 100;
+$client-font-weight-bold1: 800;

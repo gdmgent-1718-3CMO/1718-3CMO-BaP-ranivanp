@@ -117,7 +117,7 @@ h1 {
     padding-bottom: 15px;
     font-size: $font-size-title;
     font-family: $clientfont-family-base;
-    font-weight: $client-font-weight-light;
+    font-weight: $client-font-weight-bold;
     color: $clientcolor-6;
     text-transform: uppercase;
     text-align: center;
@@ -126,6 +126,7 @@ h1 {
 h2 {
   font-size: $font-size-title;
   font-family: $clientfont-family-base;
+  font-weight: $client-font-weight-bold;
   color: $clientcolor-6;
   text-transform: uppercase;
   padding-top: 100px;
@@ -133,6 +134,8 @@ h2 {
 
 p {
   color: $clientcolor-7;
+  font-family: $clientfont-family-base1;
+  font-weight: $client-font-weight-light1;
 }
 
 /* lay-out
@@ -199,9 +202,16 @@ p {
   padding-top: 20px;
 }
 
+.afb_font {
+  max-width: 500px;
+  margin-right: 50px;
+}
+
 .button-lees {
   max-width: 150px;
+  margin-top: 30px;
   background-color: $clientcolor-6;
+  font-family: $clientfont-family-base1;
   color: white;
   border-color: transparent;
   text-transform: uppercase;
@@ -212,6 +222,21 @@ p {
       color: white;
   }
 }
+
+.button-download {
+  margin-bottom: 30px;
+}
+
+.kleurlogo1 {
+  border: solid 1px black;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
