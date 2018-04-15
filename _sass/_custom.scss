@@ -202,9 +202,29 @@ p {
   padding-top: 20px;
 }
 
+.text-kleur {
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.text-hoofdkleur {
+  text-align: left;
+  margin: 0px;
+}
+
+.text-onderdelen {
+  background-color: $color-grey-1;
+  padding: 40px;
+}
+
 .afb_font {
   max-width: 500px;
-  margin-right: 50px;
+}
+
+.afb_kleur {
+  padding-top: 100px;
 }
 
 .button-lees {
@@ -230,12 +250,13 @@ p {
 .kleurlogo1 {
   border: solid 1px black;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
-
-
-
+.kleurlogo2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
 
 // Small devices (landscape phones, 576px and up)
@@ -254,7 +275,7 @@ p {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .page_info_content{
-    margin: 0 200px;
+    margin: 0 100px;
   }
 }
 
